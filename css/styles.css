@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-navy-blue);
+}
+
+:root{
+  --font-family-Raleway: Raleway;
+  --font-family-Roboto: Roboto;
+  --color-white: #fff;
+  --color-iris: #4D5AE5;
+  --color-ocean: #404BBF;
+  --color-navy-blue: #2E2F42;
+  --color-text: #434455;
+  --color-cloud: #F4F4FD;
+  --color-cornflower: #E7E9FC;
+}
+
+.button{
+  cursor: pointer;
+}
+
+a{
+  font-style: normal;
+}
+
+ul{
+  list-style: none;
+}
+
+.link-logo{
+  font-family: var(--font-family-Raleway);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.logo-blue{
+  color: var(--color-iris);
+  font-family: var(--font-family-Raleway);
+  letter-spacing: 0.03em;
+}
+
+.link-spc{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link-spc-item{
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 16px;
+
+}
+
+.link-spc-link:hover,
+.link-spc-link:focus{
+  color: var(--color-ocean);
+}
+
+.address-list-item{
+  font-size: 16px;
+
+}
+
+.nav-mail:hover,
+.nav-mail:focus{
+  color: var(--color-ocean)
+}
+
+.nav-tel:hover,
+.nav-tel:focus{
+  color: var(--color-ocean)
+}
+
+.section-main{
+  background-color: var(--color-navy-blue);
+}
+
+h1{
+  color: var(--color-white);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.main-section-button{
+  background-color: var(--color-iris);
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-section-button:hover,
+.main-section-button:focus{
+  background-color: var(--color-ocean);
+}
+
+.skil{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.skil-text{
+  font-size: 16px;
+  letter-spacing: 1.5;
+  color: var(--color-text);
+}
+
+.title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.team{
+  background-color: var(--color-cloud);
+}
+
+.team-name{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team-prof{
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.color-cloud{
+  color: var(--color-cloud);
+}
+
+.footer-text{
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-cloud);
+}
+
+.footer{
+  background-color: var(--color-navy-blue);
+}
+
+/* Портфолио */
+
+.prtf-button-item{
+  background-color: var(--color-cornflower);
+  color: var(--color-iris);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.prtf-button-item:hover,
+.prtf-button-item:focus{
+  background-color: var(--color-ocean);
+  color: var(--color-white);
+}
+
+.title-card{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.text-card{
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}

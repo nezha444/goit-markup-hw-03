@@ -42,14 +42,25 @@ ul{
   margin: 0 auto;
 }
 
+.flex-containre{
+  display: flex;
+}
+
 /* header */
 
 .header{
 
   background-color: var(--color-white);
   border-bottom: 1px solid #E7E9FC;
-  padding: 24px 0;
 
+}
+
+.nav{
+  display: flex;
+}
+
+.header>.flex-containre{
+  align-items: baseline;
 }
 
 
@@ -60,6 +71,7 @@ ul{
   text-transform: uppercase;
   letter-spacing: 0.03em;
   padding: 24px 0;
+  margin-right: 76px;
 }
 
 .logo-blue{
@@ -71,15 +83,17 @@ ul{
 .link-spc{
   font-size: 16px;
   font-weight: 500;
+  display: flex;
 }
 
 .link-spc-item{
   color: var(--color-text);
   font-weight: 500;
   font-size: 16px;
+  display: flex;
 }
 
-.link-spc>.link-spc-item:not(:last-child){
+.link-spc-item:not(:last-child){
   margin-right: 40px;
 
 }
@@ -91,6 +105,14 @@ ul{
 
 .link-spc-link{
   padding: 24px 0;
+}
+
+.address{
+  margin-left: auto;
+}
+
+.address-list{
+  display: flex;
 }
 
 .address-list-item{
@@ -122,6 +144,7 @@ h1{
   line-height: 1.07;
   text-align: center;
   width: 496px;
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 
@@ -139,10 +162,20 @@ h1{
   
 }
 
+.section-main>div{
+  align-items: center;
+  flex-direction: column;
+}
+
 .main-section-button:hover,
 .main-section-button:focus{
   background-color: var(--color-ocean);
 }
+
+/* SKILL */
+
+
+
 
 .skills{
   padding: 120px 0;
@@ -155,8 +188,13 @@ h1{
   margin-bottom: 8px;
 }
 
+.skills-items{
+  display: flex;
+}
+
 .skill-item{
   width: 264px;
+  margin-right: 24px;
 }
 
 .skill-text{
@@ -169,15 +207,31 @@ h1{
   padding-bottom: 120px;
 }
 
+.doings-imgs{
+  display: flex;
+  justify-content: space-between;
+}
+
 .title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   margin-bottom: 72px;
+  text-align: center;
+}
+
+.card{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+
 }
 
 .card-team-info{
   padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .team{
@@ -189,10 +243,16 @@ h1{
   margin-bottom: 72px;
 }
 
+.team-cards{
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-name{
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 .team-prof{
@@ -201,16 +261,13 @@ h1{
   color: var(--color-text);
 }
 
-.color-cloud{
-  color: var(--color-cloud);
-}
+
 
 .footer-text{
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-cloud);
   width: 264px;
-  margin-top: 16px;
 }
 
 .footer{
@@ -218,11 +275,37 @@ h1{
   padding: 100px 0;
 }
 
+.footer-logo{
+  font-family: var(--font-family-Raleway);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-cloud);
+  margin-bottom: 16px;
+  display: block;
+}
+
 
 /* Портфолио */
 
+.prft-section-main{
+  padding-bottom: 120px;
+}
+
 .prtf-buttons>li:not(:last-child){
-  margin-right: 24px;
+ margin-right: 24px;
+}
+
+.prtf-container{
+  flex-direction: column;
+}
+
+.prtf-buttons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+
 }
 
 
@@ -244,6 +327,13 @@ h1{
   color: var(--color-white);
 }
 
+.row-cards{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
 .title-card{
   font-weight: 500;
   font-size: 20px;
@@ -256,18 +346,14 @@ h1{
   color: var(--color-text);
 }
 
-.project-card{
-  border: 1px solid #E7E9FC;
+
+
+.project-card>img{
+ margin-bottom: -5px;
 }
 
-.project-card:not(:nth-child(3n+3)){
-  margin-right: 24px;
-}
-
-.project-card:nth-child(-n + 6){
-  margin-bottom: 48px;
-}
 
 .project-card-text{
   padding: 32px 16px;
+  border: 1px solid #E7E9FC;
 }
